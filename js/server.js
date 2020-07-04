@@ -8,28 +8,8 @@ setTimeout(function(){
     textconsole.innerHTML += html
 }, 1000);
 
-
-
-// Get the input field
-let inputKey = document.querySelector(".text_data");
-
-// Execute a function when the user releases a key on the keyboard
-input.addEventListener("keyup", function(event) {
-    // Number 13 is the "Enter" key on the keyboard
-    if (event.keyCode === 13) {
-      // Cancel the default action, if needed
-      event.preventDefault();
-      // Trigger the button element with a click
-      send()
-    }
-  });
-
-
-
-
-
 let send = ()=>{
-    let url = '"https://tchatbot-flask.herokuapp.com/api'
+    let url = 'https://tchatbot-flask.herokuapp.com/api'
     let textInputField = document.querySelector(".text_data")
     let textInput = textInputField.value
     let textconsole = document.getElementById("textConsole")
