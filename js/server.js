@@ -29,7 +29,7 @@ input.addEventListener("keyup", function(event) {
 
 
 let send = ()=>{
-    let url = '"https://tchatbot-flask.herokuapp.com/api'
+    let url = 'https://tchatbot-flask.herokuapp.com/api'
     let textInputField = document.querySelector(".text_data")
     let textInput = textInputField.value
     let textconsole = document.getElementById("textConsole")
