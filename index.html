@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="assets/robot.png" rel="icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel = "stylesheet" href = "style.css" type="text/css">
+    <title>TChatBot</title>
+  </head>
+  <body id = "body">
+
+    <div class = "container">
+        <div class = "row mx-2" style = "justify-content: center;margin-top: 5vh;">
+            <div class = "col-md-12" style = "background-color:rgb(154, 7, 252);padding:10px 20px 20px 20px;border-radius: 7px;min-height:80vh;"> 
+                <div class = "row" style = "background-color:black;border-radius:7px;padding:5px;color:white;">
+                    <div class = "col-md-5">
+                         <h3 style = "font-size: 30px;"><img src = "assets/robot.png" height = "10%" width = "10%">TChatBot</h3>
+                    </div>
+                </div>
+                <div class = "row" id = "scrollable" style = "margin-bottom:10px;">
+                    <div class = "col-md-12" id = "textConsole">
+                        <!-- <div class = "bot_msg">
+                            <textarea  class="bot_msg_area" cols="40">Hi! I'm TensorChatBot aka TChatBot.</textarea>
+                        </div>                                         -->
+                    </div>
+                </div>
+                <div class = "row send_text_row">
+                    <div class = "col-md-11">
+                        <textarea class="form-control text_data" id="exampleFormControlTextarea1" rows="1" style = "font-size: 20px;background-color:white;border-radius: 30px;padding-left: 20px;overflow:hidden;" placeholder="Type something here..."></textarea>
+                    </div>
+                    <div class = "col-md-1" style = "text-align: center;">
+                        <a type="button" onclick= "send()" class="btn" id = "send" style = "background-color: black; font-size: 18px;color:white;min-width:90px;"><img src = "assets/send.png" height = "32" width = "32"> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type = "text/javascript" src = "js/server.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+<!-- 
+    <div class = "user_msg">
+        <textarea  class="user_msg_area" cols="40">Hey there! I'm Deepraj</textarea>
+    </div>
+    <div class = "bot_msg">
+        <textarea  class="bot_msg_area" cols="40">Hi Deepraj! How can I help you?</textarea>
+    </div>
+    <div class = "user_msg">
+        <textarea  class="user_msg_area" cols="40">I need to know who the hell made this f**** chatbot</textarea>
+    </div>  
+    <div class = "bot_msg">
+        <textarea  class="bot_msg_area" cols="40">It's made by you! Deepraj....</textarea>
+    </div>  
+-->
